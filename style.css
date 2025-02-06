@@ -1,0 +1,19 @@
+/* Home profile section  */
+.home-profile-image {
+  top: -40px;
+}
+.body {
+  height: 1500px;
+}
+/* faq page  */
+.faq-toggle {
+  display: none;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  display: block;
+}
+
+.faq-answer {
+  display: none;
+}

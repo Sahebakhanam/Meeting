@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-purple-600 text-white font-sans">
+    <div class="h-full container mx-auto p-6">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-6">
+        <input
+          type="text"
+          placeholder="Search By Heading"
+          class="flex-grow mx-4 p-2 rounded-lg outline-none"
+        />
+        <div class="flex space-x-4">
+          <span class="text-2xl cursor-pointer"></span>
+          <span class="text-2xl cursor-pointer flex"
+            ><img
+              src="assets/img/icons/bell.png"
+              alt="notification"
+              class="rounded-lg w-8 h-8" />
+            <img
+              src="assets/img/icons/setting.png"
+              alt="Setting"
+              class="rounded-lg w-8 h-8"
+          /></span>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- Profile Section -->
+        <div class="col-span-3 text-gray-800 rounded-lg p-4">
+          <a href="profile.html"
+            ><div class="w-80 bg-white rounded-lg shadow-md overflow-hidden">
+              <!-- Background Image -->
+              <div class="relative">
+                <img
+                  src="assets/img/banner (1).png"
+                  alt="Background"
+                  class="w-full h-24 object-cover"
+                />
+
+                <div
+                  class="flex items-center bg-white rounded-lg p-4 space-x-4 w-full max-w-lg"
+                >
+                  <!-- Profile Image -->
+                  <div class="relative home-profile-image">
+                    <div
+                      class="w-24 h-24 border-4 border-white-200 rounded-lg overflow-hidden"
+                    >
+                      <img
+                        src="assets/img/Profile.png"
+                        alt="Profile"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Profile Info -->
+                  <div class="flex-1">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <h2 class="text-lg font-bold text-gray-800">
+                        AMY HANNRY
+                      </h2>
+                      <span class="text-yellow-500">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.286 3.967c.3.921-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.839-.197-1.54-1.118l1.286-3.967a1 1 0 00-.364-1.118L2.24 9.394c-.784-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Ass. Manager At XYZ Corporate<br />5+ Years Experience
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div
+                  class="items-center bg-white rounded-lg p-4 space-x-4 w-full max-w-lg"
+                >
+                  <div
+                    class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden"
+                  >
+                    <div
+                      class="absolute top-0 left-0 h-full bg-purple-500"
+                      style="width: 20%"
+                    ></div>
+                  </div>
+                  <p class="mt-1 text-xs text-gray-600">
+                    20% Complete Your Profile
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+          <!-- Articles Section -->
+          <div class="col-span-3 mt-8 bg-white text-gray-800 rounded-lg p-4">
+            <h3 class="text-lg font-bold mb-4">Articles</h3>
+            <ul class="text-sm space-y-2">
+              <li class="flex justify-between items-center">
+                <span>How To Create New Meeting?</span>
+                <a href="#" class="text-purple-600">Read More..</a>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>How To Create New Meeting?</span>
+                <a href="#" class="text-purple-600">Read More..</a>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>How To Create New Meeting?</span>
+                <a href="#" class="text-purple-600">Read More..</a>
+              </li>
+            </ul>
+            <button
+              class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg w-full"
+            >
+              More
+            </button>
+          </div>
+        </div>
+
+        <!-- Meetings Section -->
+        <div class="col-span-9 bg-white text-gray-800 rounded-lg p-4">
+          <div class="grid items-center space-x-4 mb-4">
+            <h3 class="text-lg font-bold flex-grow">
+              Create Your Own Round-Table Discussions
+            </h3>
+            <div
+              class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md border"
+            >
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <input
+                type="text"
+                placeholder="Write Topic Here"
+                class="flex-grow p-2 border rounded-lg outline-none"
+              />
+              <button
+                class="px-4 py-2 bg-purple-600 text-white rounded-lg"
+                id="createRT"
+              >
+                Create
+              </button>
+            </div>
+          </div>
+
+          <h3 class="text-lg font-bold mb-4">Active Meetings</h3>
+          <div class="space-y-4">
+            <!-- Meeting Item -->
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg">
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <div class="flex-grow ml-4">
+                <h4 class="text-sm font-bold">Meeting Topic</h4>
+                <p class="text-xs text-gray-600">Short Description...</p>
+              </div>
+              <div class="grid">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">
+                  Join
+                </button>
+                <span class="text-sm text-gray-600 m-1">00:12:05</span>
+              </div>
+            </div>
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg">
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <div class="flex-grow ml-4">
+                <h4 class="text-sm font-bold">Meeting Topic</h4>
+                <p class="text-xs text-gray-600">Short Description...</p>
+              </div>
+              <div class="grid">
+                <button class="px-4 py-2 bg-red-500 text-white rounded-lg">
+                  Full
+                </button>
+                <span class="text-sm text-gray-600 m-1">00:12:05</span>
+              </div>
+            </div>
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg">
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <div class="flex-grow ml-4">
+                <h4 class="text-sm font-bold">Meeting Topic</h4>
+                <p class="text-xs text-gray-600">Short Description...</p>
+              </div>
+              <div class="grid">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">
+                  Join
+                </button>
+                <span class="text-sm text-gray-600 m-1">00:12:05</span>
+              </div>
+            </div>
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg">
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <div class="flex-grow ml-4">
+                <h4 class="text-sm font-bold">Meeting Topic</h4>
+                <p class="text-xs text-gray-600">Short Description...</p>
+              </div>
+              <div class="grid">
+                <button class="px-4 py-2 bg-red-500 text-white rounded-lg">
+                  Full
+                </button>
+                <span class="text-sm text-gray-600 m-1">00:12:05</span>
+              </div>
+            </div>
+            <div class="flex items-center bg-gray-100 p-4 rounded-lg">
+              <img
+                src="assets/img/Profile.png"
+                alt="Meeting"
+                class="rounded-lg w-16 h-16"
+              />
+              <div class="flex-grow ml-4">
+                <h4 class="text-sm font-bold">Meeting Topic</h4>
+                <p class="text-xs text-gray-600">Short Description...</p>
+              </div>
+              <div class="grid">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">
+                  Join
+                </button>
+                <span class="text-sm text-gray-600 m-1">00:12:05</span>
+              </div>
+            </div>
+            <!-- Add more meeting items as needed -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="border-t border-gray-600 mt-10">
+        <div class="flex justify-between items-center p-4">
+          <!-- Left Section -->
+          <p class="text-left text-gray-900">
+            © 2025 All Rights Reserved By
+            <span class="font-bold">Element Coders</span>
+          </p>
+
+          <!-- Right Section -->
+          <div class="space-x-4 text-right text-gray-900">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+            <a href="#" class="hover:underline">Refund Policy</a>
+            <a href="#" class="hover:underline">Legal</a>
+            <a href="#" class="hover:underline">About Us</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>

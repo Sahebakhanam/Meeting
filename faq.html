@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Hero Section -->
+    <section class="bg-purple-600 text-white py-12 text-center">
+      <h2 class="text-4xl font-bold">Frequently Asked Questions</h2>
+      <p class="mt-4">Find answers to common questions below.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <main class="container mx-auto py-8">
+      <div class="grid grid-cols-12 gap-6">
+        <!-- FAQ Content -->
+        <section class="col-span-8 bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">FAQs</h3>
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <input type="checkbox" class="faq-toggle" id="faq1" />
+              <label
+                for="faq1"
+                class="faq-question block cursor-pointer bg-gray-200 p-4 rounded-lg"
+              >
+                How do I create a meeting?
+              </label>
+              <div
+                class="faq-answer bg-gray-100 p-4 border rounded-lg mt-2 text-gray-700"
+              >
+                To create a meeting, click on the "Create Meeting" button, fill
+                out the necessary details, and click submit. You'll be able to
+                invite participants and manage the agenda easily.
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <input type="checkbox" class="faq-toggle" id="faq2" />
+              <label
+                for="faq2"
+                class="faq-question block cursor-pointer bg-gray-200 p-4 rounded-lg"
+              >
+                What is a round-table discussion?
+              </label>
+              <div
+                class="faq-answer bg-gray-100 p-4 border rounded-lg mt-2 text-gray-700"
+              >
+                A round-table discussion is a meeting format where participants
+                engage in open dialogue, typically without a fixed hierarchy,
+                fostering collaboration and idea sharing.
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <input type="checkbox" class="faq-toggle" id="faq3" />
+              <label
+                for="faq3"
+                class="faq-question block cursor-pointer bg-gray-200 p-4 rounded-lg"
+              >
+                Can I invite external participants to a meeting?
+              </label>
+              <div
+                class="faq-answer bg-gray-100 p-4 border rounded-lg mt-2 text-gray-700"
+              >
+                Yes, you can invite external participants by sharing the meeting
+                link or sending them an email invitation directly through our
+                platform.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="col-span-4">
+          <!-- Blog Box -->
+          <div
+            class="bg-purple-600 text-white shadow-md rounded-lg p-4 mb-6 text-center"
+          >
+            <h4 class="text-xl font-bold mb-2">Explore Our Blog</h4>
+            <p class="text-gray-100">
+              Discover helpful insights and stories in our blog.
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 bg-white text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-gray-200"
+              >Go to Blog</a
+            >
+          </div>
+
+          <!-- Article Box -->
+          <div class="bg-white shadow-md rounded-lg p-4 mb-6">
+            <h4 class="text-lg font-bold text-gray-800 mb-2">Articles</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-purple-600 hover:underline"
+                  >How to Improve Team Meetings</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-purple-600 hover:underline"
+                  >Effective Communication Strategies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-purple-600 hover:underline"
+                  >Time Management Tips for Teams</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-600 mt-10">
+      <div class="flex justify-between items-center p-4">
+        <!-- Left Section -->
+        <p class="text-left">
+          © 2025 All Rights Reserved By
+          <span class="font-bold">Element Coders</span>
+        </p>
+
+        <!-- Right Section -->
+        <div class="space-x-4 text-right">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Use</a>
+          <a href="#" class="hover:underline">Refund Policy</a>
+          <a href="#" class="hover:underline">Legal</a>
+          <a href="#" class="hover:underline">About Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
