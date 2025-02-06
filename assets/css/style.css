@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Home profile section  */
 .home-profile-image {
   top: -40px;

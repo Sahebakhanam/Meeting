@@ -18,3 +18,11 @@ popupModal.addEventListener("click", (event) => {
     RTpopUp.classList.add("hidden");
   }
 });
+
+// About-us page 
+<script>
+      AOS.init({
+        duration: 1000, // Animation duration
+        offset: 100, // Animation trigger offset
+      });
+</script>
